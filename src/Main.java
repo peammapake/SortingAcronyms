@@ -23,11 +23,17 @@ public class Main {
                 if(o1.length()>o2.length()){
                     return 1;
                 }
+                else if(o1.length()<o2.length()){
+                    return 0;
+                }
                 else{
-                    return o1.compareTo(o2);
+                    String s1 = String.valueOf(o1.charAt(0));
+                    String s2 = String.valueOf(o2.charAt(0));
+                    return s1.compareTo(s2);
                 }
             }
         });
+        System.out.println("Output: ");
         for(String counter: acronymList){
             System.out.println(counter);
         }
