@@ -1,11 +1,21 @@
-import com.sun.deploy.net.MessageHeader;
+/**
+ * By Bhimapaka Thapanangkun
+ * Simple program to make acronym out of the first letter of each word
+ * depending on its capitalization. The program then sort the output by
+ * its acronym length then alphabetical order
+ */
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
+
 public class Main {
 
+    /**
+     * Main method first ask user for the number of input then continue
+     * on receiving words that user wants to turn into an acronym
+     */
     public static void main(String[] args) {
 
         String input;
